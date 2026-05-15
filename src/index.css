@@ -95,6 +95,17 @@ input, textarea, select { font-family: inherit; }
 .divider { display: flex; align-items: center; gap: 16px; color: var(--text3); font-size: 0.85rem; }
 .divider::before, .divider::after { content: ''; flex: 1; height: 1px; background: var(--border); }
 
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+img { 
+  max-width: 100%; 
+  height: auto; 
+}
+
 @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
 @keyframes glow-pulse { 0%,100% { opacity: 0.5; } 50% { opacity: 1; } }
