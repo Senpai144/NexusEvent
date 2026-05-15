@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import plongeeImg from './plongee.jpg';
 import { 
   Zap, ArrowRight, Calendar, Users, BarChart2, MapPin, 
   Star, CheckCircle, Play, TrendingUp, Shield, Headphones 
@@ -12,7 +11,7 @@ const EVENTS = [
   { id: '2', title: 'Cours de Surf à Somone', category: 'Sport', date: '18 Juin 2026', location: 'Plage de la Somone', participants: 8, max: 12, price: 15000, cover: 'https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=400&q=80' },
   { id: '3', title: 'Atelier Peinture & Vin', category: 'Atelier', date: '20 Juin 2026', location: 'Galerie du Fleuve', participants: 15, max: 20, price: 35000, cover: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=400&q=80' },
   { id: '4', title: 'Startup Weekend Africa', category: 'Business', date: '5 Juillet 2026', location: 'CTIC Dakar', participants: 120, max: 150, price: 0, cover: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?w=400&q=80' },
-  { id: '5', title: 'Plongée sous-marine Gorée', category: 'Sport', date: '25 Juin 2026', location: 'Club Nautique Dakar', participants: 5, max: 8, price: 45000, cover: 'plongeeImg' },
+  { id: '5', title: 'Plongée sous-marine Gorée', category: 'Sport', date: '25 Juin 2026', location: 'Club Nautique Dakar', participants: 5, max: 8, price: 45000, cover: '/plongee.jpg' },
   { id: '6', title: 'Initiation Poterie Artisanale', category: 'Atelier', date: '28 Juin 2026', location: 'Village des Arts', participants: 10, max: 10, price: 12000, cover: 'https://images.unsplash.com/photo-1565191999001-551c187427bb?w=400&q=80' },
   { id: '7', title: 'Festival Afrobeat Summer', category: 'Musique', date: '22 Juin 2026', location: 'Plage de N\'Gor', participants: 850, max: 1000, price: 15000, cover: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=400&q=80' },
   { id: '8', title: 'Art & Culture Expo', category: 'Art', date: '12 Juillet 2026', location: 'IFAN Museum, Dakar', participants: 200, max: 300, price: 5000, cover: 'https://images.unsplash.com/photo-1578926375605-eaf7559b1458?w=400&q=80' },
