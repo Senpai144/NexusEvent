@@ -11,17 +11,17 @@ export default function Login() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     setLoading(true)
-    // Simulation d'une connexion
+    // Simule une requête d'authentification
     setTimeout(() => { setLoading(false); navigate('/dashboard') }, 1500)
   }
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', background: 'var(--bg)' }}>
       
-      {/* PANNEAU GAUCHE : Inspiré par Untitled.jpg */}
+      {/* PANNEAU GAUCHE : Illustration et message de bienvenue */}
       <div className="hide-mobile" style={{ 
         flex: 1, 
-        background: '#FFF5F2', // Fond clair comme sur la maquette
+        background: '#FFF5F2', 
         display: 'flex', 
         flexDirection: 'column', 
         justifyContent: 'center', 

@@ -16,10 +16,10 @@ export default function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
         
-        {/* Ton Dashboard sera ici */}
+        {/* La page du dashboard, accessible après connexion */}
         <Route path="/dashboard" element={<Dashboard />} />
 
-        {/* Si l'utilisateur tape n'importe quoi, on le ramène à l'accueil */}
+        {/* Page non trouvée */}
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </BrowserRouter>

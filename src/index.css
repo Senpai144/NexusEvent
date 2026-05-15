@@ -32,22 +32,22 @@ body {
   background: var(--bg); 
   color: var(--text); 
   min-height: 100vh; 
-  /* Passage de 1.6 à 1.7 pour plus d'air entre les lignes de texte */
+  /* Légère augmentation du line-height pour améliorer la lisibilité du texte */
   line-height: 1.7; 
   -webkit-font-smoothing: antialiased; 
 }
 
-/* 2. Correction de l'effet "applatie" des titres */
+/* Titres */
 h1, h2, h3, h4, h5 { 
   font-family: 'Syne', sans-serif; 
-  /* Augmentation du line-height pour décoller les lignes */
+  /* Ajustement du line-height pour aérer les titres */
   line-height: 1.3; 
-  /* Ajout d'un espacement entre les lettres pour aérer la police Syne */
+  /* Légère réduction du letter-spacing pour éviter que les lettres ne soient trop serrées */
   letter-spacing: -0.01em; 
   margin-bottom: 0.5em;
 }
 
-/* 3. Optimisation spécifique pour les gros titres (h1) */
+/* 3. Ajustement spécifique pour les titres h1 qui sont souvent plus grands et peuvent sembler plus serrés */
 h1 {
   letter-spacing: -0.02em;
   line-height: 1.2;
@@ -110,7 +110,16 @@ input, textarea, select { font-family: inherit; }
 
 .gradient-text { background: linear-gradient(135deg, var(--accent), var(--violet)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
 .glow-line { height: 1px; background: linear-gradient(90deg, transparent, var(--accent), transparent); }
+/* Navigation */
+.navbar { display: flex; justify-content: space-between; }
+.nav-links { display: flex; gap: 1rem; }
 
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .nav-links.open { display: flex; flex-direction: column; }
+  .hamburger { display: block; }
+}
 @media (max-width: 768px) {
   .hide-mobile { display: none !important; }
   .container { padding: 0 16px; }

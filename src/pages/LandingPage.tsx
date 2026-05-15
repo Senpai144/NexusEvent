@@ -39,8 +39,8 @@ function CategoryBadge({ cat }: { cat: string }) {
     'Musique': 'badge-accent', 
     'Business': 'badge-warning', 
     'Art': 'badge-success',
-    'Sport': 'badge-success', // Vert pour le sport
-    'Atelier': 'badge-warning' // Jaune pour les ateliers
+    'Sport': 'badge-success', 
+    'Atelier': 'badge-warning' 
   }
   return <span className={`badge ${map[cat] || 'badge-accent'}`}>{cat}</span>
 }
