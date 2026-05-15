@@ -1,4 +1,4 @@
-<img width="468" height="11" alt="image" src="https://github.com/user-attachments/assets/7cbe625b-1b22-4cc6-876f-3500f60aba7c" /># Projet NexusEVENT — Application de Gestion d'Événements
+NexusEVENT — Application de Gestion d'Événements
 
 Ce projet a été réalisé dans le cadre de notre deuxième année de Licence en Génie Informatique (L2). C'est une application web permettant de gérer et de planifier des événements en ligne.
 
