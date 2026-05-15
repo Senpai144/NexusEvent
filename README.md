@@ -1,73 +1,30 @@
-# React + TypeScript + Vite
+<img width="468" height="11" alt="image" src="https://github.com/user-attachments/assets/7cbe625b-1b22-4cc6-876f-3500f60aba7c" /># Projet NexusEVENT — Application de Gestion d'Événements
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ce projet a été réalisé dans le cadre de notre deuxième année de Licence en Génie Informatique (L2). C'est une application web permettant de gérer et de planifier des événements en ligne.
 
-Currently, two official plugins are available:
+## 👥 Notre Équipe (Groupe de 4 membres)
+* **Ousmane Ndoye** (Chef d'équipe / Lead Frontend)
+* Ndeye Anta FOMBA
+* Penda BADIANE
+* Mouhamed Adama NDIAYE
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Technologies utilisées
+* **Frontend :** React.js (avec TypeScript)
+* **Build Tool :** Vite
+* **Styles :** CSS pur / Tailwind CSS
+* **Icônes :** Lucide-React
+* **Déploiement :** Vercel
 
-## React Compiler
+## 🚀 Fonctionnalités principales
+* **Page d'accueil :** Présentation de la plateforme et navigation.
+* **Authentification :** Connexion, inscription et récupération de mot de passe (gestion des formulaires).
+* **Tableau de bord (Dashboard) :** Vue d'ensemble avec statistiques clés, liste des événements et graphiques responsives.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📦 Installation et Lancement en Local
 
-## Expanding the ESLint configuration
+Pour lancer le projet sur votre machine, suivez ces étapes :
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 1. Cloner le projet
+```bash
+git clone https://github.com/Senpai144/NexusEvent.git
+cd [nom-du-depot]
