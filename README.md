@@ -19,12 +19,3 @@ Ce projet a été réalisé dans le cadre de notre deuxième année de Licence e
 * **Page d'accueil :** Présentation de la plateforme et navigation.
 * **Authentification :** Connexion, inscription et récupération de mot de passe (gestion des formulaires).
 * **Tableau de bord (Dashboard) :** Vue d'ensemble avec statistiques clés, liste des événements et graphiques responsives.
-
-## 📦 Installation et Lancement en Local
-
-Pour lancer le projet sur votre machine, suivez ces étapes :
-
-### 1. Cloner le projet
-```bash
-git clone https://github.com/Senpai144/NexusEvent.git
-cd [nom-du-depot]
