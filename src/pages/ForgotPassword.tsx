@@ -77,7 +77,7 @@ export default function ForgotPassword() {
             <div style={{ width: 28, height: 28, background: 'var(--accent)', borderRadius: 8, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <Zap size={14} color="#fff" fill="#fff" />
             </div>
-            <span style={{ fontFamily: 'Syne', fontWeight: 700, fontSize: '0.95rem' }}>Event<span style={{ color: 'var(--accent)' }}>Flow</span></span>
+            <span style={{ fontFamily: 'Syne', fontWeight: 700, fontSize: '0.95rem' }}>Nexus<span style={{ color: 'var(--accent)' }}>Event</span></span>
           </Link>
         </div>
       </div>

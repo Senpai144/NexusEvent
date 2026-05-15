@@ -71,7 +71,7 @@ export default function LandingPage() {
           </h1>
 
           <p className="fade-up-2" style={{ fontSize: 'clamp(1rem, 2vw, 1.2rem)', color: 'var(--text2)', maxWidth: 650, margin: '0 auto 40px', lineHeight: 1.7 }}>
-            Des ateliers créatifs aux sports extrêmes, <strong>EventFlow</strong> centralise les meilleurs événements et activités près de chez vous.
+            Des ateliers créatifs aux sports extrêmes, <strong>NexusEvent</strong> centralise les meilleurs événements et activités près de chez vous.
           </p>
 
           <div className="fade-up-3" style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 64 }}>

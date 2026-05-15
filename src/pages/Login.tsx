@@ -53,7 +53,7 @@ export default function Login() {
           
           <div className="fade-up">
             <p style={{ color: 'var(--accent)', fontWeight: 700, marginBottom: 8, fontFamily: 'Syne' }}>
-              Bienvenue sur EventFlow
+              Bienvenue sur NexusEvent
             </p>
             <h1 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: 8, letterSpacing: '-0.02em', fontFamily: 'Syne' }}>
               Connexion
