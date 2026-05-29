@@ -55,8 +55,7 @@ export default function BookingPage() {
       </div>
     )
   }
-
-  const isFull = event.participants >= event.max
+  
   const placesRestantes = event.max - event.participants
   const totalPrice = event.price * form.nombre
 
