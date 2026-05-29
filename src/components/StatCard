@@ -1,0 +1,24 @@
+import React from 'react';
+import { TrendingUp } from 'lucide-react';
+
+interface StatProps {
+  label: string;
+  value: string;
+  trend: string;
+}
+
+const StatCard = ({ label, value, trend }: StatProps) => {
+  return (
+    <div className="card" style={{ flex: 1, minWidth: '200px' }}>
+      <p className="form-label" style={{ marginBottom: '10px' }}>{label}</p>
+      <div style={{ display: 'flex', alignItems: 'baseline', gap: '10px' }}>
+        <h3 style={{ fontSize: '1.8rem' }}>{value}</h3>
+        <span style={{ color: 'var(--success)', fontSize: '0.8rem', display: 'flex', alignItems: 'center' }}>
+          {trend} <TrendingUp size={14} style={{ marginLeft: '4px' }} />
+        </span>
+      </div>
+    </div>
+  );
+};
+
+export default StatCard;
