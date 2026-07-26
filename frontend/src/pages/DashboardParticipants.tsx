@@ -2,11 +2,9 @@ import { useState, useEffect } from 'react'
 import DashboardLayout from '../components/DashboardLayout'
 import Pagination from '../components/Pagination'
 import { usePagination } from '../hooks/usePagination'
-import { Users, Search, AlertCircle, Filter, ChevronDown, ArrowUpDown, Download, Printer } from 'lucide-react'
+import { Search, AlertCircle, Filter, ChevronDown, ArrowUpDown, Download, Printer } from 'lucide-react'
 import { bookingsApi, eventsApi } from '../services/api'
 import { exportCSV, printTable } from '../utils/export'
-
-const SORTABLE = ['firstName', 'eventId', 'numberOfSeats', 'paymentMethod', 'status', 'totalAmount', 'createdAt'] as const
 
 export default function DashboardParticipants() {
   const [bookings, setBookings] = useState<any[]>([])

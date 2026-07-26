@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import DashboardLayout from '../components/DashboardLayout'
 import Pagination from '../components/Pagination'
 import { usePagination } from '../hooks/usePagination'
-import { Star, MessageSquare, Trash2, AlertCircle, ArrowUpDown, CheckCircle, XCircle } from 'lucide-react'
+import { Star, MessageSquare, Trash2, CheckCircle, XCircle } from 'lucide-react'
 import { reviewsApi } from '../services/api'
 
 export default function DashboardReviews() {
@@ -20,7 +20,7 @@ export default function DashboardReviews() {
     r.text?.toLowerCase().includes(search.toLowerCase())
   )
 
-  const { page, totalPages, paginated, sortKey, sortDir, toggleSort, goTo } = usePagination(filtered, 8)
+  const { page, totalPages, paginated, goTo } = usePagination(filtered, 8)
 
   const handleToggleApprove = async (id: string) => {
     setReviews(reviews.map((r: any) => r.id === id ? { ...r, approved: !r.approved } : r))

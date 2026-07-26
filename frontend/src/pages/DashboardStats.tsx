@@ -36,8 +36,6 @@ export default function DashboardStats() {
     category: ev.category,
   })).sort((a, b) => b.revenue - a.revenue)
 
-  const MONTHS = ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Août', 'Sep', 'Oct', 'Nov', 'Déc']
-
   return (
     <DashboardLayout>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 32, flexWrap: 'wrap', gap: 16 }}>

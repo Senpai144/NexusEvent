@@ -6,6 +6,7 @@ import { useAuth } from '../contexts/AuthContext'
 
 interface Props {
   children: ReactNode
+  maxWidth?: number
 }
 
 export default function DashboardLayout({ children }: Props) {

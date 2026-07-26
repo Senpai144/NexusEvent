@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar'
 import Testimonials from '../components/Testimonials'
 import Footer from '../components/Footer'
 import { 
-  Zap, ArrowRight, Calendar, MapPin, AlertCircle
+  Zap, ArrowRight, Calendar, MapPin
 } from 'lucide-react'
 import { eventsApi } from '../services/api'
 import WeatherDatePicker from '../components/WeatherDatePicker'
@@ -41,8 +41,8 @@ function CategoryBadge({ cat }: { cat: string }) {
 
 export default function LandingPage() {
   const [events, setEvents] = useState<any[]>([])
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState('')
+  const [, setLoading] = useState(true)
+  const [, setError] = useState('')
   useEffect(() => {
     eventsApi.getAll()
       .then(res => {

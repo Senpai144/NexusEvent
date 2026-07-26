@@ -1,13 +1,13 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import WeatherDatePicker, { type ForecastDay } from '../components/WeatherDatePicker'
-import { ArrowLeft, Calendar } from 'lucide-react'
+import { ArrowLeft } from 'lucide-react'
 import { Link, useNavigate } from 'react-router-dom'
 
 export default function WeatherPlannerPage() {
   const navigate = useNavigate()
 
-  const handleConfirm = (day: ForecastDay) => {
+  const handleConfirm = (_day: ForecastDay) => {
     // nothing extra needed - confirmation bar links to create event
   }
 
