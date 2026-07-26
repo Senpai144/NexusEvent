@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: nexusevent-api
+    runtime: node
+    region: frankfurt
+    plan: free
+    buildCommand: cd backend && npm install && npm run build
+    startCommand: cd backend && node dist/main.js
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: PORT
+        value: 3000
+      - key: CORS_ORIGINS
+        value: http://localhost:5173,https://nexusevent.vercel.app
+      - key: OPENWEATHER_API_KEY
+        sync: false
