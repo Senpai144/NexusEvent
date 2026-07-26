@@ -126,7 +126,7 @@ export default function Dashboard() {
   const { user } = useAuth()
   const [events, setEvents] = useState<any[]>([])
   const [myBookings, setMyBookings] = useState<any[]>([])
-  const [dbStats, setDbStats] = useState<any>(null)
+  const [, setDbStats] = useState<any>(null)
 
   useEffect(() => {
     eventsApi.getAll().then(res => setEvents(res.data)).catch(() => {})

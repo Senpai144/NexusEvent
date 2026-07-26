@@ -1,4 +1,5 @@
-import { createContext, useContext, useState, useEffect, ReactNode } from 'react'
+import { createContext, useContext, useState } from 'react'
+import type { ReactNode } from 'react'
 import { authApi } from '../services/api'
 
 interface User {
@@ -27,7 +28,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [token, setToken] = useState<string | null>(() => {
     return localStorage.getItem('nexus_token')
   })
-  const [loading, setLoading] = useState(false)
+  const [loading] = useState(false)
 
   const storeSession = (token: string, user: User) => {
     localStorage.setItem('nexus_token', token)

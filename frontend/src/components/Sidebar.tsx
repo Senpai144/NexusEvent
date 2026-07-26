@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import {
   LayoutDashboard, Calendar, Users, BarChart2, Settings, Bell, Plus,
-  MessageSquare, Shield, Gift, ArrowUpRight, LogOut, ChevronLeft, ChevronRight, Zap, X, Ticket
+  MessageSquare, Shield, Gift, ArrowUpRight, LogOut, ChevronLeft, ChevronRight, Zap, Ticket
 } from 'lucide-react'
 import { useAuth } from '../contexts/AuthContext'
 

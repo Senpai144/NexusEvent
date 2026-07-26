@@ -44,7 +44,7 @@ export default function Testimonials() {
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 24 }}>
           {displayed.slice(0, 6).map((r, i) => (
-            <div key={r.id} className="card fade-up" style={{ padding: 28, position: 'relative' }} style={{ animationDelay: `${i * 0.08}s` }}>
+            <div key={r.id} className="card fade-up" style={{ padding: 28, position: 'relative', animationDelay: `${i * 0.08}s` }}>
               <Quote size={32} color="var(--accent)" opacity={0.15} style={{ position: 'absolute', top: 20, right: 20 }} />
               <div style={{ display: 'flex', gap: 4, marginBottom: 16 }}>
                 {Array.from({ length: r.rating }).map((_, j) => (

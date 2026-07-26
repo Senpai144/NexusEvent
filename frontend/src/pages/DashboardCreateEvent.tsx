@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import DashboardLayout from '../components/DashboardLayout'
-import { Calendar, MapPin, DollarSign, Users, Image, Type, AlignLeft, Clock, Save, ArrowLeft } from 'lucide-react'
+import { Calendar, MapPin, DollarSign, Users, Image, Type, Clock, Save, ArrowLeft } from 'lucide-react'
 import { eventsApi } from '../services/api'
 
 const CATEGORIES = ['Technologie', 'Sport', 'Atelier', 'Business', 'Musique', 'Art']

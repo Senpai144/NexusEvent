@@ -1,5 +1,4 @@
-import { ReactNode } from 'react'
-import { Inbox, SearchX, CalendarX } from 'lucide-react'
+import type { ReactNode } from 'react'
 
 const ILLUSTRATIONS: Record<string, ReactNode> = {
   default: (

@@ -1,4 +1,5 @@
-import { useState, ReactNode } from 'react'
+import { useState } from 'react'
+import type { ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import Sidebar from './Sidebar'
 import { Search, Bell, Gift, ChevronDown, Menu } from 'lucide-react'

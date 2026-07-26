@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import DashboardLayout from '../components/DashboardLayout'
 import Pagination from '../components/Pagination'
 import { usePagination } from '../hooks/usePagination'
-import { Search, Shield, AlertCircle, CheckCircle, XCircle, ArrowUpDown } from 'lucide-react'
+import { Search, Shield, AlertCircle, CheckCircle, XCircle, ArrowUpDown, Users } from 'lucide-react'
 import { usersApi } from '../services/api'
 import { useAuth } from '../contexts/AuthContext'
 

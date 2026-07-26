@@ -6,7 +6,7 @@ import {
 interface HourlyData {
   time: string
   temp: number
-  condition: 'sunny' | 'cloudy' | 'rainy' | 'stormy'
+  condition: 'sunny' | 'cloudy' | 'rainy' | 'stormy' | 'partly-cloudy'
 }
 
 export interface ForecastDay {

@@ -10,8 +10,6 @@ import { exportCSV, printTable } from '../utils/export'
 const CATEGORIES = ['Toutes', 'Technologie', 'Sport', 'Atelier', 'Business', 'Musique', 'Art']
 const STATUS_FILTERS = ['Tous', 'upcoming', 'ongoing', 'past', 'cancelled']
 
-const SORTABLE = ['title', 'category', 'date', 'status', 'participants', 'price'] as const
-
 export default function DashboardEvents() {
   const [events, setEvents] = useState<any[]>([])
   const [search, setSearch] = useState('')
